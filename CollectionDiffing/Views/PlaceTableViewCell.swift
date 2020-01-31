@@ -14,5 +14,10 @@ class PlaceTableViewCell: UITableViewCell {
     @IBOutlet weak var subtitleLabel: UILabel!
     @IBOutlet weak var placeImageView: UIImageView!
     
+    func setup(with place: Place) {
+        titleLabel.text = place.name
+        subtitleLabel.text = place.description
+        placeImageView.image = UIImage(named: place.imageName)
+    }
     
 }

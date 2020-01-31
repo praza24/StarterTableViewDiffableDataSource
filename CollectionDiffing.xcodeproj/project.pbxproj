@@ -15,6 +15,8 @@
 		8B784A8023C9C49100005A74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B784A7E23C9C49100005A74 /* LaunchScreen.storyboard */; };
 		8B784A8F23C9D42500005A74 /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B784A8D23C9D42500005A74 /* PlaceTableViewCell.swift */; };
 		8B784A9023C9D42500005A74 /* PlaceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B784A8E23C9D42500005A74 /* PlaceTableViewCell.xib */; };
+		8BAF8C9023E3BBC800439FCF /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAF8C8F23E3BBC800439FCF /* City.swift */; };
+		8BAF8C9223E3BCB500439FCF /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAF8C9123E3BCB500439FCF /* Place.swift */; };
 		8BD4187C23E3146D0099E8C7 /* osaka.json in Resources */ = {isa = PBXBuildFile; fileRef = 8BD4187B23E3146D0099E8C7 /* osaka.json */; };
 		8BD4187F23E314B60099E8C7 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD4187E23E314B60099E8C7 /* Bundle+Extension.swift */; };
 		8BD4188223E31F900099E8C7 /* kyoto.json in Resources */ = {isa = PBXBuildFile; fileRef = 8BD4188023E31F900099E8C7 /* kyoto.json */; };
@@ -32,6 +34,8 @@
 		8B784A8123C9C49100005A74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B784A8D23C9D42500005A74 /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
 		8B784A8E23C9D42500005A74 /* PlaceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceTableViewCell.xib; sourceTree = "<group>"; };
+		8BAF8C8F23E3BBC800439FCF /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		8BAF8C9123E3BCB500439FCF /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		8BD4187B23E3146D0099E8C7 /* osaka.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = osaka.json; sourceTree = "<group>"; };
 		8BD4187E23E314B60099E8C7 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		8BD4188023E31F900099E8C7 /* kyoto.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = kyoto.json; sourceTree = "<group>"; };
@@ -61,6 +65,8 @@
 		8B36520323DD4ADF0041CF8D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8BAF8C8F23E3BBC800439FCF /* City.swift */,
+				8BAF8C9123E3BCB500439FCF /* Place.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -194,8 +200,10 @@
 			files = (
 				8B784A7823C9C49000005A74 /* CityPlaceViewController.swift in Sources */,
 				8BD4187F23E314B60099E8C7 /* Bundle+Extension.swift in Sources */,
+				8BAF8C9023E3BBC800439FCF /* City.swift in Sources */,
 				8B784A7423C9C49000005A74 /* AppDelegate.swift in Sources */,
 				8B784A7623C9C49000005A74 /* SceneDelegate.swift in Sources */,
+				8BAF8C9223E3BCB500439FCF /* Place.swift in Sources */,
 				8B784A8F23C9D42500005A74 /* PlaceTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
