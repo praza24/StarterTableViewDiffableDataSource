@@ -1,14 +1,7 @@
-//
-//  City.swift
-//  CollectionDiffing
-//
-//  Created by Alfian Losari on 31/01/20.
-//  Copyright © 2020 Alfian Losari. All rights reserved.
-//
-
 import Foundation
 
-enum City: String {
+//MARK: Represents sections
+enum City: String, CaseIterable {
     case kyoto
     case osaka
     case tokyo

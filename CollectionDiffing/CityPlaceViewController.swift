@@ -1,13 +1,6 @@
-//
-//  ViewController.swift
-//  CollectionDiffing
-//
-//  Created by Alfian Losari on 11/01/20.
-//  Copyright © 2020 Alfian Losari. All rights reserved.
-//
-
 import UIKit
 
+//MARK: Subclassing is neccessary in order to override the section headers
 class CityPlaceTableViewDiffableDataSource: UITableViewDiffableDataSource<City, Place> {
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -26,7 +19,7 @@ class CityPlaceViewController: UITableViewController {
         
         setupNavigationItems()
         setupTableView()
-        buildAndApplySnapshot()
+        buildAndApplySnapshot() //Initialises the first snapshot to act as a basline
     }
     
     private func setupTableView() {

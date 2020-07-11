@@ -1,11 +1,3 @@
-//
-//  Place.swift
-//  CollectionDiffing
-//
-//  Created by Alfian Losari on 31/01/20.
-//  Copyright © 2020 Alfian Losari. All rights reserved.
-//
-
 import Foundation
 
 struct Place: Decodable {
@@ -16,19 +8,20 @@ struct Place: Decodable {
 }
 
 extension Place: Hashable {
-    
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(uuid)
-        hasher.combine(name)
-        hasher.combine(description)
-        hasher.combine(imageName)
-    }
+
+    //Structs automatically conform to the Hashable Protcol
+//    func hash(into hasher: inout Hasher) {
+//        hasher.combine(uuid)
+//        hasher.combine(name)
+//        hasher.combine(description)
+//        hasher.combine(imageName)
+//    }
 }
 
 extension Array where Element == Place {
     
     static var osakaStubs: Self {
-        try! Bundle.decodeJSONFromMainResources(filename: "osaka")
+        try! Bundle.decodeJSONFromMainResources(filename: "osaka") //Returns an Array of Places
     }
     
     static var kyotoStubs: Self {
